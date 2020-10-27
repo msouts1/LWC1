@@ -1,0 +1,31 @@
+<template>
+	<div style={bgColourStyle} class="appList">
+		<div style={bgColourHeaderStyle} class="appList_header">
+			<span style={titleColourStyle}>{title}</span>
+		</div>
+		<div class="appList_body">
+			<!-- Start App list -->
+			<template if:true={apps}>
+				<lightning-layout multiple-rows="true">
+					<template for:each={apps} for:item="app">
+						<lightning-layout-item key={app.Id} flexibility="auto" class="slds-p-around_x-small slds-align_absolute-center">
+							<c-app-item
+								app={app}
+								key={app.applicationId}
+								onselected={handleAppSelected}
+							></c-app-item>
+						</lightning-layout-item>
+					</template>
+				</lightning-layout>
+			</template>
+			<!-- End app list -->
+			<!-- Data failed to load -->
+			<template if:true={error}>
+				<div class="slds-text-color_error">
+					An error occurred while loading the app list
+				</div>
+			</template>
+		</div>
+	<div>&nbsp;</div>
+	</div>
+</template>

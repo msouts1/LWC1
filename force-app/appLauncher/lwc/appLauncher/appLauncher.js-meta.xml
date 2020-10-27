@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>46.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="appsConfig" type="String"  default="xxx"/>
+            <property name="title" type="String"  default="My Apps"/>
+            <property name="bgColourHeader" type="Color" default="#6988AA"/>
+            <property name="bgColour" type="Color" default="#FFFFFF"/>
+            <property name="titleColour" type="Color" default="#FFFFFF"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

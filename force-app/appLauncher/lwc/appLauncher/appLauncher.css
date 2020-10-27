@@ -1,0 +1,23 @@
+.appList {
+    width: 100%;
+    /* background-color: #f8f8f8; */
+    border-radius: 0rem;
+    border: 0px solid #223244;
+}
+
+.appList_header{
+    height: 30px;
+    /* background-color: #6988AA; */
+    font-size: 14px !important;
+    font-weight: bold;
+    color: #FFFFFF;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-indent: 5px;
+}
+
+.appList_body{
+    padding-left: 20px;
+    padding-right: 20px;
+}
